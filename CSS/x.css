@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ HEADER STARTS ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR STARTS ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.nav__link{
+    color: black !important;
+    font-size: 25px;
+}
+.nav__link:hover{
+    color: #33ff77 !important;
+}
+.navbar{
+    border-radius: 0 0 50px 50px;
+    background-color: white !important;
+}
+.navbar__img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ENDS ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 900px;
+    background-image: url('https://wallpapercave.com/wp/wp2940300.jpg');
+    background-size: cover;
+}
+.header__home{
+    height: 100%;
+}
+.header__name{
+    font-size: 60px;
+    font-weight: bold;
+}
+.header__text{
+    font-size: 40px;
+}
+.header__button{
+    width: 15%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ HEADER ENDS ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ CONTENT STARTS ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ ABOUT STARTS ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.content__about{
+    border: 3px #33ff77 solid;
+    padding: 5px 40px;
+}
+.about__img{
+    width: 40px;
+    height: 40px;
+}
+.about__img_face{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transition: 2s;
+}
+.about__img_gray{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.about__text{
+    width: 80%;
+}
+.about__img_black{
+    width: 250px;
+    height: 100px;
+    margin-left: 10px;
+    transition: 2s;
+}
+.about__img_face:hover{
+    transform: rotate(360deg);
+}
+.about__img_black:hover{
+    transform: scale(1.5);
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~ ABOUT ENDS ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ SKILLS STARTS ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.skills__bar_gray{
+    position: relative;
+    background-color: rgba(228, 228, 228, 0.966);
+    width: 400px;
+    height: 25px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.skills__text{
+    z-index: 2;
+}
+
+/* ************************ 1 col starts *************************************** */
+
+.col1__bar_green1{
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    background-color: lime;
+    animation: bar-web 2s infinite alternate;
+}
+.col1__bar_green2{
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    background-color: lime;
+    animation: bar-photo 2s infinite alternate;
+}
+@keyframes bar-web {
+    from{
+        width: 0;
+    }
+    to{
+        width: 95%;
+    }
+}
+@keyframes bar-photo {
+    from{
+        width: 0;
+    }
+    to{
+        width: 50%;
+    }
+}
+
+/* ************************ 2 col starts *************************************** */
+
+.col2__bar_green1{
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    background-color: lime;
+    animation: bar-com-team 2s infinite alternate;
+}
+.col2__bar_green2{
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    background-color: lime;
+    animation: bar-lead 2s infinite alternate;
+}
+.col2__bar_green3{
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    background-color: lime;
+    animation: bar-time 2s infinite alternate;
+}
+@keyframes bar-com-team {
+    from{
+        width: 0;
+    }
+    to{
+        width: 85%;
+    }
+}
+@keyframes bar-lead{
+    from{
+        width: 0;
+    }
+    to{
+        width: 65%;
+    }
+}
+@keyframes bar-time{
+    from{
+        width: 0;
+    }
+    to{
+        width: 75%;
+    }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ SKILLS ENDS ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ PORTFOLIO STARTS ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.portfolio__block{
+    height: 300px;
+    filter: grayscale(90%);
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    transition-duration: 1s;
+}
+.portfolio__block:hover{
+    filter: grayscale(50%);
+    transform: scale(1.1);
+}
+.portfolio__block:hover{
+    cursor: pointer;
+}
+.portfolio__google{
+    background-image: url('https://searchengineland.com/figz/wp-content/seloads/2015/12/google-amp-fast-speed-travel-ss-1920.jpg');
+    background-size: cover;
+}
+.portfolio__youtube{
+    background-image: url('https://cdn21.img.ria.ru/images/151920/38/1519203833_318:62:1135:675_1920x0_80_0_0_3f2603048f9acfe638536595809894ed.jpg');
+    background-size: cover;
+}
+.portfolio__twitter{
+    background-image: url('https://s0.rbk.ru/v6_top_pics/media/img/1/06/756176067829061.jpg');
+    background-size: cover;
+}
+.portfolio__instagram{
+    background-image: url('https://img.freepik.com/free-photo/instagram-logo-minimal-simple-design-template-copy-space-3d_1379-4887.jpg?size=626&ext=jpg');
+    background-size: cover;
+}
+.portfolio__facebook{
+    background-image: url('https://cdn1.img.sputnik.md/images/1474/47/14744724.jpg');
+    background-size: cover;
+}
+.portfolio__reddit{
+    background-image: url('https://img.thedailybeast.com/image/upload/v1536797828/reddit_wuap1f.jpg');
+    background-size: cover;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~ PORTFOLIO ENDS ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ CONTENT ENDS ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ FOOTER STARTS ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.footer{
+    background-image: url('https://www.samratpharmachem.com/wp-content/uploads/2016/10/footer-bg.jpg');
+    background-size: cover;
+}
+.footer__text{
+    font-size: 17px;
+}
+.footer__link{
+    text-decoration: none;
+    color: white;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ENDS ~~~~~~~~~~~~~~~~~~~~~~~~~ */
